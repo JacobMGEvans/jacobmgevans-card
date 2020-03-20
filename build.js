@@ -17,8 +17,8 @@ const options = {
 const data = {
   name: chalk.white('               Jacob Evans'),
   handle: chalk.white('jacobmgevans'),
-  work: chalk.white('Software Engineer'),
-  opensource: chalk.white('Koajs/router & Create React App') + chalk.blue('⚛'),
+  work: chalk.white('Associate Software Engineer'),
+  opensource: chalk.white('Koajs/router & Create React App') + chalk.blue('⚛').big(),
   twitter: chalk.gray('https://twitter.com/') + chalk.cyan('jacobmgevans'),
   github: chalk.gray('https://github.com/') + chalk.green('jacobmgevans'),
   linkedin: chalk.gray('https://linkedin.com/in/') + chalk.blue('jacobmgevans'),
