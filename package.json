@@ -8,8 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bnb/bitandbang.git"
+    "url": "git+https://github.com/JacobMGEvans/jacobmgevans-card.git"
   },
+  "homepage": "https://dev.to/jacobmgevans",
   "scripts": {
     "prepublish": "npm run build",
     "build": "node build.js",
