@@ -33,7 +33,7 @@
   ],
   "devDependencies": {
     "boxen": "^4.2.0",
-    "chalk": "^3.0.0",
+    "chalk": "^4.0.0",
     "standard": "^14.3.3"
   },
   "bugs": {
