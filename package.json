@@ -1,6 +1,6 @@
 {
   "name": "@jacobmgevans/card",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "A personal card for Jacob Evans (@jacobmgevans)",
   "main": "/bin/card.js",
   "bin": {
@@ -12,7 +12,7 @@
   },
   "homepage": "https://dev.to/jacobmgevans",
   "scripts": {
-    "publish": "npm run build && npm publish --access public",
+    "deploy": "npm run build && npm version patch && npm publish --access public",
     "build": "tsc build.ts",
     "start": "npm run build && node ./bin/card.js"
   },

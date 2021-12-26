@@ -10,7 +10,11 @@ const data = {
   handle: chalk.white("jacobmgevans"),
   work: chalk.white("Associate Software Engineer"),
   opensource:
-    chalk.white("Koajs/router & Create React App") + " " + chalk.blue("⚛"),
+    chalk.white(
+      "https://osrg.t3.gg/ & https://tutorial-quest.vercel.app/docs/en/tutorial-quest"
+    ) +
+    " " +
+    chalk.blue("⚛"),
   twitter: chalk.gray("https://twitter.com/") + chalk.cyan("jacobmgevans"),
   github: chalk.gray("https://github.com/") + chalk.green("jacobmgevans"),
   linkedin: chalk.gray("https://linkedin.com/in/") + chalk.blue("jacobmgevans"),

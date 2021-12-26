@@ -8,7 +8,9 @@ var data = {
     name: chalk_1["default"].white("               Jacob Evans"),
     handle: chalk_1["default"].white("jacobmgevans"),
     work: chalk_1["default"].white("Associate Software Engineer"),
-    opensource: chalk_1["default"].white("Koajs/router & Create React App") + " " + chalk_1["default"].blue("⚛"),
+    opensource: chalk_1["default"].white("https://osrg.t3.gg/ & https://tutorial-quest.vercel.app/docs/en/tutorial-quest") +
+        " " +
+        chalk_1["default"].blue("⚛"),
     twitter: chalk_1["default"].gray("https://twitter.com/") + chalk_1["default"].cyan("jacobmgevans"),
     github: chalk_1["default"].gray("https://github.com/") + chalk_1["default"].green("jacobmgevans"),
     linkedin: chalk_1["default"].gray("https://linkedin.com/in/") + chalk_1["default"].blue("jacobmgevans"),
