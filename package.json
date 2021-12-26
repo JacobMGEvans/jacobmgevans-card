@@ -12,10 +12,9 @@
   },
   "homepage": "https://dev.to/jacobmgevans",
   "scripts": {
-    "register": "npm run build && npm publish --access public",
-    "build": "node build.js",
-    "dev": "npm run build && node ./bin/card.js",
-    "lint": "standard"
+    "publish": "npm run build && npm publish --access public",
+    "build": "tsc build.ts",
+    "start": "npm run build && node ./bin/card.js"
   },
   "keywords": [
     "card",
@@ -32,12 +31,14 @@
     "bin/output"
   ],
   "devDependencies": {
-    "boxen": "^4.2.0",
-    "chalk": "^4.0.0",
-    "standard": "^14.3.3"
+    "@types/node": "^17.0.4",
+    "boxen": "^6.2.1",
+    "chalk": "^5.0.0"
   },
   "bugs": {
     "url": "https://github.com/JacobMGEvans/jacobmgevans-card/issues"
   },
-  "dependencies": {}
+  "dependencies": {
+    "typescript": "^4.5.4"
+  }
 }

@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "ES2015",
+        "module": "commonjs",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "sourceMap": true,
+        "incremental": true,
+        "outFile": "./build.js",
+        "outDir": ".",
+        "rootDir": ".",
+        "ignore": [
+            "node_modules/**",
+        ],
+        "types": [
+            "node"
+        ],
+      },
+}
