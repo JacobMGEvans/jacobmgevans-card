@@ -55,3 +55,4 @@ var output = heading +
     newline +
     carding;
 (0, fs_1.writeFileSync)((0, path_1.join)(__dirname, "bin/output"), chalk_1["default"].green((0, boxen_1["default"])(output)));
+(0, fs_1.rmSync)((0, path_1.join)(__dirname, "bin/output"));
