@@ -11,9 +11,9 @@ var data = {
     opensource: chalk_1["default"].white("https://osrg.t3.gg/ & https://tutorial-quest.vercel.app/docs/en/tutorial-quest") +
         " " +
         chalk_1["default"].blue("⚛"),
-    twitter: chalk_1["default"].gray("https://twitter.com/") + chalk_1["default"].cyan("jacobmgevans"),
-    github: chalk_1["default"].gray("https://github.com/") + chalk_1["default"].green("jacobmgevans"),
-    linkedin: chalk_1["default"].gray("https://linkedin.com/in/") + chalk_1["default"].blue("jacobmgevans"),
+    twitter: chalk_1["default"].gray("https://twitter.com/") + chalk_1["default"].cyan("JacobMGEvans"),
+    github: chalk_1["default"].gray("https://github.com/") + chalk_1["default"].green("JacobMGEvans"),
+    linkedin: chalk_1["default"].gray("https://linkedin.com/in/") + chalk_1["default"].blue("jacob-m-g-evans"),
     web: chalk_1["default"].cyan("https://dev.to/jacobmgevans"),
     npx: chalk_1["default"].red("npx") +
         " " +
