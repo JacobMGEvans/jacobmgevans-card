@@ -1,6 +1,6 @@
 "use strict";
 
-import chalk, { Options } from "chalk";
+import chalk from "chalk";
 import boxen from "boxen";
 import { writeFileSync } from "fs";
 import { join } from "path";

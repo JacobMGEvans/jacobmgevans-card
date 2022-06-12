@@ -1,7 +1,8 @@
 {
     "compilerOptions": {
-        "target": "ES2015",
-        "module": "commonjs",
+        "target": "ESNext",
+        "module": "System",
+        "moduleResolution": "Node",
         "strict": true,
         "esModuleInterop": true,
         "skipLibCheck": true,
@@ -11,11 +12,11 @@
         "outFile": "./build.js",
         "outDir": ".",
         "rootDir": ".",
-        "ignore": [
-            "node_modules/**",
-        ],
         "types": [
             "node"
         ],
-      },
+    },
+    "exclude": [
+        "node_modules/**",
+    ],
 }
