@@ -15,9 +15,10 @@ const data = {
     ) +
     " " +
     chalk.blue("⚛"),
-  twitter: chalk.gray("https://twitter.com/") + chalk.cyan("jacobmgevans"),
-  github: chalk.gray("https://github.com/") + chalk.green("jacobmgevans"),
-  linkedin: chalk.gray("https://linkedin.com/in/") + chalk.blue("jacobmgevans"),
+  twitter: chalk.gray("https://twitter.com/") + chalk.cyan("JacobMGEvans"),
+  github: chalk.gray("https://github.com/") + chalk.green("JacobMGEvans"),
+  linkedin:
+    chalk.gray("https://linkedin.com/in/") + chalk.blue("jacob-m-g-evans"),
   web: chalk.cyan("https://dev.to/jacobmgevans"),
   npx:
     chalk.red("npx") +
