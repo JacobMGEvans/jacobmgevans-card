@@ -14,7 +14,9 @@
   "scripts": {
     "deploy": "npm run build && npm version patch && npm publish --access public",
     "build": "tsc build.ts",
-    "start": "npm run build && node ./bin/card.js"
+    "start": "npm run build && node ./bin/card.js",
+    "test": "vitest",
+    "coverage": "vitest --coverage"
   },
   "keywords": [
     "card",
@@ -33,7 +35,8 @@
   "devDependencies": {
     "@types/node": "^17.0.42",
     "boxen": "^6.2.1",
-    "chalk": "^5.0.1"
+    "chalk": "^5.0.1",
+    "vitest": "^0.14.2"
   },
   "bugs": {
     "url": "https://github.com/JacobMGEvans/jacobmgevans-card/issues"

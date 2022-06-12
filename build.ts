@@ -2,7 +2,7 @@
 
 import chalk from "chalk";
 import boxen from "boxen";
-import { writeFileSync } from "fs";
+import { rmSync, writeFileSync } from "fs";
 import { join } from "path";
 
 const data = {
@@ -65,3 +65,4 @@ const output =
   carding;
 
 writeFileSync(join(__dirname, "bin/output"), chalk.green(boxen(output)));
+rmSync(join(__dirname, "bin/output"));
