@@ -6,32 +6,32 @@ import { rmSync, writeFileSync } from "fs";
 import { join } from "path";
 
 const data = {
-  name: chalk.white("               Jacob Evans"),
-  handle: chalk.white("jacobmgevans"),
-  work: chalk.white("Associate Software Engineer"),
+  name: chalk.white(`               Jacob Evans`),
+  handle: chalk.white(`jacobmgevans`),
+  work: chalk.white(`Associate Software Engineer`),
   opensource:
     chalk.white(
-      "https://osrg.t3.gg/ & https://tutorial-quest.vercel.app/docs/en/tutorial-quest"
+      `https://osrg.t3.gg/ & https://tutorial-quest.vercel.app/docs/en/tutorial-quest`
     ) +
-    " " +
-    chalk.blue("⚛"),
-  twitter: chalk.gray("https://twitter.com/") + chalk.cyan("JacobMGEvans"),
-  github: chalk.gray("https://github.com/") + chalk.green("JacobMGEvans"),
+    ` ` +
+    chalk.blue(`⚛`),
+  twitter: chalk.gray(`https://twitter.com/`) + chalk.cyan(`JacobMGEvans`),
+  github: chalk.gray(`https://github.com/`) + chalk.green(`JacobMGEvans`),
   linkedin:
-    chalk.gray("https://linkedin.com/in/") + chalk.blue("jacob-m-g-evans"),
-  web: chalk.cyan("https://dev.to/jacobmgevans"),
+    chalk.gray(`https://linkedin.com/in/`) + chalk.blue(`jacob-m-g-evans`),
+  web: chalk.cyan(`https://dev.to/jacobmgevans`),
   npx:
-    chalk.red("npx") +
-    " " +
-    chalk.white("@jacobmgevans/card  (via GitHub Package Registry)"),
-  labelWork: chalk.white.bold("       Work:"),
-  labelOpenSource: chalk.white.bold("Open Source:"),
-  labelTwitter: chalk.white.bold("    Twitter:"),
-  labelnpm: chalk.white.bold("        npm:"),
-  labelGitHub: chalk.white.bold("     GitHub:"),
-  labelLinkedIn: chalk.white.bold("   LinkedIn:"),
-  labelWeb: chalk.white.bold("        Web:"),
-  labelCard: chalk.white.bold("       Card:"),
+    chalk.red(`npx`) +
+    ` ` +
+    chalk.white(`@jacobmgevans/card  (via GitHub Package Registry)`),
+  labelWork: chalk.white.bold(`       Work:`),
+  labelOpenSource: chalk.white.bold(`Open Source:`),
+  labelTwitter: chalk.white.bold(`    Twitter:`),
+  labelnpm: chalk.white.bold(`        npm:`),
+  labelGitHub: chalk.white.bold(`     GitHub:`),
+  labelLinkedIn: chalk.white.bold(`   LinkedIn:`),
+  labelWeb: chalk.white.bold(`        Web:`),
+  labelCard: chalk.white.bold(`       Card:`),
 };
 
 const newline = "\n";
@@ -65,4 +65,4 @@ const output =
   carding;
 
 writeFileSync(join(__dirname, "bin/output"), chalk.green(boxen(output)));
-rmSync(join(__dirname, "bin/output"));
+rmSync(join(__dirname, "./build.js"));

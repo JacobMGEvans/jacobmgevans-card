@@ -12,9 +12,9 @@
   },
   "homepage": "https://dev.to/jacobmgevans",
   "scripts": {
-    "deploy": "npm run build && npm version patch && npm publish --access public",
+    "deploy": "npm run build && npm version patch && rm ./build.js && npm publish --access public",
     "build": "tsc build.ts",
-    "start": "npm run build && node ./bin/card.js",
+    "start": "npm run build &&  rm ./build.js && node ./bin/card.js",
     "test": "vitest",
     "coverage": "vitest --coverage"
   },
