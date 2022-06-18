@@ -13,7 +13,7 @@
   "homepage": "https://dev.to/jacobmgevans",
   "type": "module",
   "scripts": {
-    "deploy": "npm run build && npm version patch && node --experimental-modules  ./build.js && npm publish --access public",
+    "deploy": "npm run build && npm version patch && node --experimental-modules  ./dist/build.js && npm publish --access public",
     "build": "tsc",
     "start": "npm run build && node --experimental-modules  ./dist/build.js && node ./bin/card.cjs",
     "test": "vitest",
