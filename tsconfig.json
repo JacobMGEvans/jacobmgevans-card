@@ -1,21 +1,23 @@
 {
     "compilerOptions": {
         "target": "ESNext",
-        "module": "System",
-        "moduleResolution": "Node",
+        "module": "ESNext",
+        "moduleResolution": "NodeNext",
         "strict": true,
         "esModuleInterop": true,
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
-        "sourceMap": true,
+        "sourceMap": false,
         "incremental": true,
-        "outFile": "./build.js",
-        "outDir": ".",
+        "outDir": "./dist",
         "rootDir": ".",
         "types": [
             "node"
         ],
     },
+    "files":[
+        "./build.ts"
+    ],
     "exclude": [
         "node_modules/**",
     ],

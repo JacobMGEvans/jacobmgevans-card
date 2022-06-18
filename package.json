@@ -11,10 +11,11 @@
     "url": "https://github.com/JacobMGEvans/jacobmgevans-card.git"
   },
   "homepage": "https://dev.to/jacobmgevans",
+  "type": "module",
   "scripts": {
-    "deploy": "npm run build && npm version patch && rm ./build.js && npm publish --access public",
-    "build": "tsc build.ts",
-    "start": "npm run build &&  rm ./build.js && node ./bin/card.js",
+    "deploy": "npm run build && npm version patch && node --experimental-modules  ./build.js && npm publish --access public",
+    "build": "tsc",
+    "start": "npm run build && node --experimental-modules  ./dist/build.js && node ./bin/card.cjs",
     "test": "vitest",
     "coverage": "vitest --coverage"
   },

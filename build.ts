@@ -1,14 +1,14 @@
 "use strict";
 
-import chalk from "chalk";
-import boxen from "boxen";
-import { rmSync, writeFileSync } from "fs";
-import { join } from "path";
+const chalk = (await import("chalk")).default;
+const boxen = (await import("boxen")).default;
+const { chmodSync, rmSync, writeFileSync } = await import("fs");
+const { join } = await import("path");
 
 const data = {
   name: chalk.white(`               Jacob Evans`),
   handle: chalk.white(`jacobmgevans`),
-  work: chalk.white(`Associate Software Engineer`),
+  work: chalk.white(`FullStack Software Engineer`),
   opensource:
     chalk.white(
       `https://osrg.t3.gg/ & https://tutorial-quest.vercel.app/docs/en/tutorial-quest`
@@ -44,7 +44,7 @@ const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`;
 const webing = `${data.labelWeb}  ${data.web}`;
 const carding = `${data.labelCard}  ${data.npx}`;
 
-const output =
+export const output =
   heading +
   newline +
   newline +
@@ -64,5 +64,8 @@ const output =
   newline +
   carding;
 
-writeFileSync(join(__dirname, "bin/output"), chalk.green(boxen(output)));
-rmSync(join(__dirname, "./build.js"));
+// Create card file and write to disk
+writeFileSync("bin/output", chalk.green(boxen(output)));
+
+chmodSync("./dist", "755");
+rmSync("./dist", { recursive: true });
