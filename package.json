@@ -1,6 +1,6 @@
 {
   "name": "@jacobmgevans/card",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "A personal card for Jacob Evans (@jacobmgevans)",
   "main": "/dist/index.js",
   "bin": {
