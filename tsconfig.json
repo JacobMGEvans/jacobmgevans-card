@@ -1,24 +1,18 @@
 {
-    "compilerOptions": {
-        "target": "ESNext",
-        "module": "ESNext",
-        "moduleResolution": "NodeNext",
-        "strict": true,
-        "esModuleInterop": true,
-        "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true,
-        "sourceMap": false,
-        "incremental": true,
-        "outDir": "./dist",
-        "rootDir": ".",
-        "types": [
-            "node"
-        ],
-    },
-    "files":[
-        "./build.ts"
-    ],
-    "exclude": [
-        "node_modules/**",
-    ],
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "composite": true,
+    "incremental": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "outDir": "./dist",
+    "rootDir": ".",
+    "types": ["node"]
+  },
+  "files": ["index.ts"],
+  "exclude": ["node_modules/**", "dist/**"]
 }

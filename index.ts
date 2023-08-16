@@ -1,9 +1,9 @@
 "use strict";
+import { chmodSync, rmSync, writeFileSync, readFileSync } from "node:fs";
+import { dirname, join } from "node:path/posix";
 
 const chalk = (await import("chalk")).default;
 const boxen = (await import("boxen")).default;
-const { chmodSync, rmSync, writeFileSync } = await import("fs");
-const { join } = await import("path");
 
 const data = {
   name: chalk.white(`               Jacob Evans`),
@@ -32,7 +32,7 @@ const data = {
   labelLinkedIn: chalk.white.bold(`   LinkedIn:`),
   labelWeb: chalk.white.bold(`        Web:`),
   labelCard: chalk.white.bold(`       Card:`),
-};
+} as const;
 
 const newline = "\n";
 const heading = `${data.name} / ${data.handle}`;
@@ -65,7 +65,7 @@ export const output =
   carding;
 
 // Create card file and write to disk
-writeFileSync("bin/output", chalk.green(boxen(output)));
-
 chmodSync("./dist", "755");
-rmSync("./dist", { recursive: true });
+writeFileSync(`./dist/output`, chalk.green(boxen(output, { padding: 1 })));
+const card = readFileSync(`./dist/output`);
+console.log(card.toString());
