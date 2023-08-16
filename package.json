@@ -13,10 +13,10 @@
   "homepage": "https://dev.to/jacobmgevans",
   "type": "module",
   "scripts": {
-    "deploy": "npm run build && npm version patch && node --experimental-modules  ./dist/index.js && npm publish --access public",
+    "deploy": "npm run build && npm version patch && node ./dist/index.js && npm publish --access public",
     "build": "rm -rf ./dist && ncc build ./index.ts -o ./dist && node ./dist/index.js",
     "start": "npm run build && node ./dist/index.js",
-    "test": "vitest",
+    "test": "npm run build && vitest",
     "coverage": "vitest --coverage"
   },
   "keywords": [
