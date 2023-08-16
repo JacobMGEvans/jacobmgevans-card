@@ -1,6 +1,6 @@
 "use strict";
 
-import { chmodSync, rmSync, writeFileSync, readFileSync } from "node:fs";
+import { chmodSync, writeFileSync, readFileSync } from "node:fs";
 
 const chalk = (await import("chalk")).default;
 const boxen = (await import("boxen")).default;
