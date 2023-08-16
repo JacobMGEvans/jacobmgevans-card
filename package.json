@@ -2,20 +2,19 @@
   "name": "@jacobmgevans/card",
   "version": "1.0.12",
   "description": "A personal card for Jacob Evans (@jacobmgevans)",
-  "main": "./dist/index.js",
+  "main": "dist/index.js",
   "bin": {
-    "": "./dist/index.js"
+    "@jacobmgevans": "bin/run.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/JacobMGEvans/jacobmgevans-card.git"
   },
-  "homepage": "https://dev.to/jacobmgevans",
+  "homepage": "https://twitter.com/jacobmgevans",
   "type": "module",
   "scripts": {
     "deploy": "npm run build && npm version patch && node ./dist/index.js && npm publish --access public",
     "build": "rm -rf ./dist && ncc build ./index.ts -o ./dist && node ./dist/index.js",
-    "start": "npm run build && node ./dist/index.js",
     "test": "npm run build && vitest",
     "coverage": "vitest --coverage"
   },

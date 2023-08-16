@@ -1,6 +1,7 @@
+#!/usr/bin / env node
 "use strict";
+
 import { chmodSync, rmSync, writeFileSync, readFileSync } from "node:fs";
-import { dirname, join } from "node:path/posix";
 
 const chalk = (await import("chalk")).default;
 const boxen = (await import("boxen")).default;
