@@ -1,4 +1,3 @@
-#!/usr/bin / env node
 "use strict";
 
 import { chmodSync, rmSync, writeFileSync, readFileSync } from "node:fs";
