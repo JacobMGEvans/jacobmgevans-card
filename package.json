@@ -2,9 +2,9 @@
   "name": "@jacobmgevans/card",
   "version": "1.0.10",
   "description": "A personal card for Jacob Evans (@jacobmgevans)",
-  "main": "/bin/card.js",
+  "main": "/dist/index.js",
   "bin": {
-    "jacobmgevans": "./bin/card.js"
+    "jacobmgevans": "./dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -30,20 +30,20 @@
   "author": "Jacob Evans (dev.to/jacobmgevans)",
   "license": "MIT",
   "files": [
-    "bin/card.js",
-    "bin/output"
+    "dist/index.js",
+    "dist/output"
   ],
   "devDependencies": {
     "@types/node": "^20.5.0",
     "boxen": "^7.1.1",
     "chalk": "^5.3.0",
+    "typescript": "^5.1.6",
     "vitest": "^0.34.1"
   },
   "bugs": {
     "url": "https://github.com/JacobMGEvans/jacobmgevans-card/issues"
   },
   "dependencies": {
-    "@vercel/ncc": "^0.36.1",
-    "typescript": "^5.1.6"
+    "@vercel/ncc": "^0.36.1"
   }
 }
