@@ -2,9 +2,9 @@
   "name": "@jacobmgevans/card",
   "version": "1.0.11",
   "description": "A personal card for Jacob Evans (@jacobmgevans)",
-  "main": "/dist/index.js",
+  "main": "./dist/index.js",
   "bin": {
-    "jacobmgevans": "./dist/index.js"
+    "": "./dist/index.js"
   },
   "repository": {
     "type": "git",
